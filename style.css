@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -85,7 +84,7 @@ main {
 
 .card {
   position: relative;
-  animation: downtop 700ms;
+  animation: down-to-top 700ms;
   transition: transform 250ms;
   border-radius: 20rem;
 }
@@ -114,14 +113,14 @@ main {
   font-size: 20rem;
   padding: 0 24rem;
   color: var(--dark-20);
-  animation: topdown 500ms 500ms forwards;
+  animation: top-to-down 500ms 500ms forwards;
 }
 
 footer {
   display: none;
 }
 
-@keyframes downtop {
+@keyframes down-to-top {
   from {
     opacity: 0;
     transform: translateY(30px);
@@ -132,7 +131,7 @@ footer {
   }
 }
 
-@keyframes topdown {
+@keyframes top-to-down {
   from {
     opacity: 0;
     transform: translateY(-15px);
@@ -266,10 +265,8 @@ footer {
     right: 0; 
     left: 50%;
     transform: translate(-50%, -50%);
-    /* margin-right: -50%; */
     user-select: none;
     z-index: 100;
-
   }
 
   .card {
@@ -285,9 +282,7 @@ footer {
   }
 
   .card:hover h2 {
-    /* visibility: visible; */
     opacity: 1;
-    /* z-index: 100; */
   }
 
 }
