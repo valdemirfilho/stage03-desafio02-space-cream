@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Staatliches";
+  src: url("/fonts/Staatliches-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('/fonts/palanquin-regular-webfont.woff2') format('woff2'),
+         url('/fonts/palanquin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
