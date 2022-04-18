@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+
 }
 
 :root {
@@ -22,14 +24,13 @@
 }
 
 body {
-  font-size: 16rem;
+  /* font-size: 16rem; */
   background-color: var(--light-10);
 }
 
 .page {
   min-width: 320px;
   margin: 0 auto;
-  /* height: 100vh; */
 }
 
 header {
@@ -68,8 +69,10 @@ header h1 {
   line-height: 15rem;
   color: var(--dark-30);
   font-weight: 400;
-  max-height: 60rem;
-  overflow: hidden;
+}
+
+.text-info span {
+  display: none;
 }
 
 main {
@@ -142,6 +145,11 @@ footer {
   }
 }
 
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
 @media (min-width: 600px) {
   .page {
     height: 100vh;
@@ -164,17 +172,21 @@ footer {
     color: var(--light-10);
     font-size: 18rem;
     line-height: 20rem;
-    max-height: initial;
+  }
+
+  .text-info span {
+    display: initial;
   }
 
   main {
     width: 100%;
-    padding: 50px;
+    padding: 50rem;
     grid-area: main;
     display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-template-rows: repeat(3, 250rem);
-    gap: 24px;
+    gap: 24rem;
     }
 
   .card:nth-child(even) img {
@@ -214,13 +226,12 @@ footer {
   }
 
   main {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200rem 168rem 200rem;
+    grid: 200rem 168rem 200rem / 1fr 1fr 1fr;
     grid-template-areas: 
       "a b c"
       "d b f"
       "d e f";
-      gap: 32rem;
+    gap: 32rem;
   }
 
   .card:nth-child(even) img {
