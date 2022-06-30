@@ -1,6 +1,9 @@
 # Rocketseat | Explorer | Stage 3 | Desafio 3
 
-# Projeto
+# Figma
+[https://www.figma.com/file/pddZCuQIRLjk5dEHQ4L4YR/Stage-03---Grid-com-anima%C3%A7%C3%B5es](https://www.figma.com/file/pddZCuQIRLjk5dEHQ4L4YR/Stage-03---Grid-com-anima%C3%A7%C3%B5es)
+
+# Projeto Online
 [https://space-cream.netlify.app/](https://space-cream.netlify.app/)
 
 # Imagens utilizadas
